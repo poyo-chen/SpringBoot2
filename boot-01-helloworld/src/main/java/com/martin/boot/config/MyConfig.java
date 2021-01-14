@@ -1,8 +1,8 @@
 package com.martin.boot.config;
 
 import ch.qos.logback.classic.db.DBHelper;
-import com.martin.bean.Pet;
-import com.martin.bean.User;
+import com.martin.boot.bean.Pet;
+import com.martin.boot.bean.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,6 +23,7 @@ import org.springframework.context.annotation.Import;
 @Import({User.class, DBHelper.class})
 @Configuration(proxyBeanMethods = false) //等同於配置文件
 @ConditionalOnBean(name="john")
+//@EnableConfigurationProperties(Car.class)
 public class MyConfig {
 
 

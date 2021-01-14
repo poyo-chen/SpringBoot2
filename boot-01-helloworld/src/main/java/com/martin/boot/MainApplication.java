@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
 //@SpringBootApplication(scanBasePackages = "com.martin")
 @SpringBootConfiguration
 @EnableAutoConfiguration
-@ComponentScan("com.martin.boot")
+@ComponentScan("com.martin")
 public class MainApplication {
 
     public static void main(String[] args) {
