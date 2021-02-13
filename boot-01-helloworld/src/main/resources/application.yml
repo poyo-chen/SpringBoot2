@@ -3,3 +3,5 @@ server:
 mycar:
   brand: BYD
   price: 100000
+debug: true
+
